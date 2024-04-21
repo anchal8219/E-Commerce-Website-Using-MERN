@@ -25,6 +25,7 @@ router.post("/login", loginController);
 router.post("/forgot-password", forgotPasswordController);
 
 //test routes
+// there are two middlewares: first check the token is given or not and is it valid or not, second checking for admin
 router.get("/test", requireSignIn, isAdmin, testController);
 
 //protected User route auth

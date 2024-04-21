@@ -28,6 +28,7 @@ const Login = () => {
           user: res.data.user,
           token: res.data.token,
         });
+        //json data not supported in local storage thats y needs to converted
         localStorage.setItem("auth", JSON.stringify(res.data));
         navigate(location.state || "/");
       } else {

@@ -15,6 +15,7 @@ const Register = () => {
 
   // form function
   const handleSubmit = async (e) => {
+    //by default refresh nhi hoga and single page app bni rhegi
     e.preventDefault();
     try {
       const res = await axios.post("/api/v1/auth/register", {
@@ -46,6 +47,7 @@ const Register = () => {
             <input
               type="text"
               value={name}
+              // we can manipulate using this onchange
               onChange={(e) => setName(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"

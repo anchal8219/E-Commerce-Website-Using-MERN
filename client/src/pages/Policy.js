@@ -3,6 +3,7 @@ import Layout from "./../components/Layout/Layout";
 
 const Policy = () => {
   return (
+    // for SEO
     <Layout title={"Privacy Policy"}>
       <div className="row contactus ">
         <div className="col-md-6 ">
